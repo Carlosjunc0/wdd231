@@ -1,0 +1,150 @@
+5. Ejemplo completo: Menú de navegación responsive con “hamburger”
+🔹 index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Responsive</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="small.css">
+  <link rel="stylesheet" href="large.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Mi Sitio</h1>
+
+      <!-- Botón hamburguesa (solo visible en móviles) -->
+      <button class="nav-toggle" id="nav-toggle">
+        ☰
+      </button>
+
+      <!-- Enlaces del menú -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+🔹 small.css (pantallas pequeñas, menú colapsado)
+/* small.css */
+
+/* Diseño general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+/* Botón hamburguesa visible solo en móviles */
+.nav-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menú oculto por defecto en móviles */
+.nav-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cuando el menú está activo (JS agrega la clase .active) */
+.nav-menu.active {
+  display: block;
+  background: #444;
+  text-align: center;
+}
+
+.nav-menu li {
+  border-top: 1px solid #555;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+🔹 large.css (pantallas grandes, menú expandido)
+/* large.css */
+@media screen and (min-width: 768px) {
+  .nav-toggle {
+    display: none; /* Ocultamos el botón hamburguesa */
+  }
+
+  .nav-menu {
+    display: flex; /* Mostramos el menú horizontalmente */
+    gap: 20px;
+  }
+
+  .nav-menu li {
+    border: none;
+  }
+
+  .nav-menu a {
+    padding: 10px 15px;
+  }
+
+  .nav-menu a:hover {
+    background-color: #555;
+  }
+}
+
+🔹 script.js (activar el menú en móviles)
+// script.js
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+navToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+🧩 6. Explicación del funcionamiento
+Elemento	Pantalla pequeña (small.css)	Pantalla grande (large.css)
+.nav-toggle	Visible (permite abrir menú)	Oculto con display: none;
+.nav-menu	Oculto por defecto (display: none)	Visible siempre (display: flex)
+JS	Añade .active para mostrar el menú en móviles	No afecta en escritorio (porque ya está visible)
+📋 7. Resumen de los pasos para recordar
+
+Diseña primero para móviles (mobile-first → empieza con small.css).
+
+Aplica @media screen and (min-width: ...) en large.css para pantallas grandes.
+
+Coloca normalize.css primero (reinicia estilos base).
+
+Agrega small.css después (diseño base para móviles).
+
+Agrega large.css al final (sobrescribe estilos para pantallas grandes).
+
+En pantallas pequeñas → botón visible, menú oculto.
+
+En pantallas grandes → botón oculto, menú visible.
+
+Usa JavaScript para alternar la clase .active y mostrar/ocultar el menú.

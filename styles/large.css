@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+
+    .top,
+    .bottom {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .course-box {
+        flex: 1;
+        max-width: 200px;
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .credits {
+        text-align: center;
+    }
+}
