@@ -10,70 +10,70 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+
     <script src="scripts/navigation.js" defer></script>
 
     <title>My site</title>
 </head>
 
 <body>
-    <Header>
-        <img src="images/Logo-icon.svg" alt="Harze logo">
+    <Header class="nav-main">
+        <img src="images/Logo-icon.svg" alt="penguin logo" class="Logo-icon">
         <span>Carlos Junco</span>
-        <img src="images/Hamburger-button-icon.svg" alt="hamburger icon">
+        <img src="images/Hamburger-button-icon.svg" alt="hamburger icon" class="Hamburger-icon">
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="Chamber.html">Chamber</a>
+            <a href="Final-project.html">Final Project</a>
+        </nav>
     </Header>
-
-    <nav id="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="Chamber.html">Chamber</a>
-        <a href="Final-project.html">Final Project</a>
-    </nav>
 
     <main>
         <h1>Home</h1>
 
-        <section>
-            <h2>About Me</h2>
+        <div class="grid-container">
+            <section class="about-section">
+                <div class="about">
+                    <h2>About Me</h2>
 
-            <p>Hello, I'm Carlos Junco.
-                I'm a software and web development student with a passion for technology, cybersecurity, and artificial
-                intelligence.
+                    <p>Hello, I'm Carlos Junco.
+                        I'm a software and web development student with a passion for technology, cybersecurity, and
+                        artificial
+                        intelligence.
 
-                I love constantly learning and transforming ideas into digital solutions that make life simpler and
-                safer.
+                        I love constantly learning and transforming ideas into digital solutions that make life simpler
+                        and
+                        safer.
 
-                This portfolio is my space to share the projects I'm working on, the courses I've taken, and my
-                evolution as a
-                developer.</p>
-        </section>
+                        This portfolio is my space to share the projects I'm working on, the courses I've taken, and my
+                        evolution as a
+                        developer.</p>
+                </div>
+            </section>
 
-        <section>
-            <h2>Student Photo</h2>
-            <img src="images/profile-image.jpg" alt="Carlos Junco image" width="200px" height="200px" loading="lazy">
-        </section>
 
-        <section>
+            <section class="photo-section">
+                <div class="photo">
+                    <h2>Student Photo</h2>
+                    <img src="images/profile-image.jpg" alt="Carlos Junco image" width="200px" height="200px"
+                        loading="lazy" class="profile-image">
+                </div>
+            </section>
+        </div>
+        <section class="course-section">
             <h2>Web Certificate Courses</h2>
-
-            <div class="top">
-                <div class="course-box1">ALL</div>
-                <div class="course-box1">CSE</div>
-                <div class="course-box1">WDD</div>
-            </div>
-
-            <div class="bottom">
-                <div class="course-box2">WDD 130</div>
-                <div class="course-box2">WDD 131</div>
-                <div class="course-box2">WDD 231</div>
-            </div>
-
-            <p class="credits">The total credits for courses listed above is 6</p>
-
+            <div class="bottom"></div>
+            <div class="credits"></div>
         </section>
+
     </main>
 
     <Footer>&copy <span id="currentyear"></span> | Carlos Junco | Oax, Mexico <p>Last Modification: <span
                 id="lastModified"></span></p>
     </Footer>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/courses-filter.js"></script>
 </body>
 
 </html>

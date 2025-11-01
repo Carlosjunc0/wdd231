@@ -1,54 +1,86 @@
 @media screen and (max-width: 768px) {
     body {
         font-family: "Poppins", Arial, sans-serif;
-        text-align: center;
         margin: 0;
-        padding: 0;
+        padding: 1rem;
         background-color: #f4f4f4;
     }
 
-    header {
-        background-color: #333;
-        color: white;
-        padding: 10px 0;
+    /* Navigation Bar Styles */
+    .nav-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: 2rem;
     }
 
-    h1 {
-        margin: 0;
-        font-size: 1.2rem;
+    .Logo-icon,
+    .Hamburger-icon {
+        width: 40px;
+        height: auto;
     }
 
-    /* Contenedor principal */
-    .courses {
-        padding: 1rem;
-    }
-
-    /* Cajas de cursos */
-    .course-box2 {
-        background-color: #ccc;
-        border: 1px solid #999;
-        border-radius: 6px;
-        padding: 1rem;
-        margin: 0.5rem 0;
-        font-weight: bold;
-    }
-
-    /* Texto de créditos */
-    .credits {
-        margin-top: 1rem;
-        font-size: 0.9rem;
-        color: #333;
-    }
-
-    /* Clase para ocultar visualmente texto pero mantener accesibilidad */
-    .visually-hidden {
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #252525;
         position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
+        top: 70px;
+        right: 0;
+        width: 100%;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    #nav-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+        border-bottom: 1px solid #444;
+        transition: background-color 0.3s;
+    }
+
+    #nav-menu a:hover {
+        background-color: #444;
+    }
+
+    header {
+        background-color: #cccc;
+        padding: 1rem 0;
+    }
+
+    /* Header Styles */
+    h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: #252525;
+        color: white;
+    }
+
+    main section,
+    footer {
+        background-color: #cccccc;
+    }
+
+    main section p {
+        font-size: 1rem;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .profile-image {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        color: black;
     }
 }
