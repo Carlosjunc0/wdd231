@@ -7,26 +7,38 @@
     <meta name="description" content="This is my fist web-page in Web Fronted 1">
     <meta name="author" content="Carlos Junco">
 
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script src="scripts/navigation.js" defer></script>
+    <meta property="og:title" content="Carlos Junc0's Portfolio">
+    <meta property="og:description"
+        content="Explore Carlos Junc0's WDD231 Web Development Portfolio — a showcase of projects, designs, and coding skills built with HTML, CSS, and JavaScript.">
+    <meta property="og:url" content="https://carlosjunc0.github.io/wdd231/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://carlosjunc0.github.io/wdd231/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Carlos Junc0's Portfolio">
 
     <title>My site</title>
+
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
-    <Header class="nav-main">
+    <header class="nav-main">
         <img src="images/Logo-icon.svg" alt="penguin logo" class="Logo-icon">
         <span>Carlos Junco</span>
-        <img src="images/Hamburger-button-icon.svg" alt="hamburger icon" class="Hamburger-icon">
+
+        <img src="images/Hamburger-button-icon.svg" alt="menu icon" class="Hamburger-icon">
+
         <nav id="nav-menu">
             <a href="index.html">Home</a>
             <a href="Chamber.html">Chamber</a>
             <a href="Final-project.html">Final Project</a>
         </nav>
-    </Header>
+    </header>
 
     <main>
         <h1>Home</h1>
@@ -80,7 +92,7 @@
             </div>
 
             <div class="bottom"></div>
-            
+
             <p class="credits"></p>
 
         </section>
@@ -90,8 +102,6 @@
     <Footer>&copy <span id="currentyear"></span> | Carlos Junco | Oax, Mexico <p>Last Modification: <span
                 id="lastModified"></span></p>
     </Footer>
-
-    <script src="scripts/navigation.js" defer></script>
     <script type="module" src="scripts/courses-filter.js"></script>
 </body>
 
