@@ -4,22 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="asdasdas">
-
+    <meta name="description"
+        content="Huatulco Chamber of Commerce: Your resource center for local businesses. Connect, grow, and prosper. Events, directories, memberships, and support for community economic growth.">
     <meta name="author" content="Carlos Junco">
+    <meta property="og:title" content="Huatulco Chamber of Commerce - Boosting your Business in Oaxaca">
+    <meta property="og:description"
+        content="We connect businesses, promote economic growth, and strengthen the business community in Huatulco. Join our business network.">
+    <meta property="og:url" content="https://carlosjunc0.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://carlosjunc0.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Huatulco Chamber of Commerce">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
     <link rel="icon" href="images/beach-icon.png">
+
     <title>Huatulco | Chamber of Commerce</title>
 </head>
 
 <body>
     <header>
-        <img src="images/beach-logo.svg" alt="beach-logo" width="100px" height="100px">
-        <h1>Huatulco Chamber of Commerce Directory</h1>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo-container">
+                    <img src="images/beach-logo.svg" alt="Huatulco CoC logo" class="logo">
+                    <div class="site-title">Huatulco Chamber of Commerce</div>
+                </div>
+
+                <img src="../images/Hamburger-button-icon.svg" alt="menu icon" class="Hamburger-icon">
+
+                <nav class="nav-menu" id="nav-menu">
+                    <a href="directory.html">Home</a>
+                    <a href="#">Directory</a>
+                    <a href="#">Join</a>
+                    <a href="#">Discover</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <main>
-        
+    <main class="container">
+
+        <section class="hero">
+
+            <p>Conectamos empresas, promovemos el desarrollo económico y fortalecemos nuestra comunidad empresarial en
+                la región de Oaxaca.</p>
+            <a href="join.html" class="cta-button">Únete a Nuestra Red</a>
+        </section>
     </main>
 
     <Footer>&copy <span id="currentyear"></span> | Carlos Junco | Oax, Mexico <p>Last Modification: <span

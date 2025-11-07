@@ -1,0 +1,93 @@
+@media screen and (min-width: 769px) {
+    :root {
+        --primary-color: #515151;
+        --secondary-color: #91a398;
+        --backgroundcolor: #e9e0d1;
+        --navigatorcolor: #33605a;
+        --footertextcolor: #F2A950;
+        --footercolor: #343A40;
+        --textcolor: #070001;
+        --fontfamily: "Poppins", Arial, sans-serif;
+        --fontfamilyalternative: "Open Sans", Arial, sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--fontfamily);
+        background-color: var(--backgroundcolor);
+        color: var(--textcolor);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    header {
+        background-color: var(--navigatorcolor);
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        color: white;
+    }
+
+    .logo-container {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+    }
+
+    .Hamburger-icon {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        color: var(--dark-color);
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: var(--border-radius);
+        transition: var(--transition);
+    }
+
+    .nav-menu a:hover {
+        background-color: var(--footercolor);
+        color: var(--footertextcolor);
+    }
+
+    footer {
+        background-color: var(--footercolor);
+        color: var(--footertextcolor);
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+}

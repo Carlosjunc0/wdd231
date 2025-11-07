@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    :root {
+        --primary-color: #515151;
+        --secondary-color: #91a398;
+        --backgroundcolor: #e9e0d1;
+        --navigatorcolor: #33605a;
+        --footercolor: #68462b;
+        --textcolor: #070001;
+        --fontfamily: "Poppins", Arial, sans-serif;
+        --fontfamilyalternative: "Open Sans", Arial, sans-serif;
+    }
+
+    .logo-icon {
+        width: 4px;
+        height: 4px;
+    }
+}
