@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Huatulco Chamber of Commerce: Your resource center for local businesses. Connect, grow, and prosper. Events, directories, memberships, and support for community economic growth.">
+        content="Huatulco Chamber of Commerce: Connect, grow, and prosper. Events, directories, memberships, and support for community economic growth.">
     <meta name="author" content="Carlos Junco">
     <meta property="og:title" content="Huatulco Chamber of Commerce - Boosting your Business in Oaxaca">
     <meta property="og:description"
@@ -23,9 +23,8 @@
     <link rel="icon" href="images/beach-icon.png">
 
     <script src="scripts/cards.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
 
-    <title>Huatulco | Chamber of Commerce</title>
+    <title>Directory</title>
 </head>
 
 <body>
@@ -37,7 +36,7 @@
                     <div class="site-title">Huatulco Chamber of Commerce</div>
                 </div>
 
-                <img src="../images/Hamburger-button-icon.svg" alt="menu icon" class="Hamburger-icon">
+                <img src="../images/hamburger-button-icon.svg" alt="menu icon" class="hamburger-icon">
 
                 <nav class="nav-menu" id="nav-menu">
                     <a href="directory.html">Home</a>
@@ -52,8 +51,15 @@
     <main class="container">
 
         <section class="hero">
-            <img src="images/hero-image.png" alt="hero image of Huatulco bay" width="1150px" height="300px"
-                loading="lazy">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/bay-huatulco.jpg">
+                <source media="(min-width: 7680px)" srcset="images/bay-huatulco.jpg">
+                <img src="images/bay-huatulco.jpg" alt="Huatulco beach view" class="hero-image" loading="eager">
+            </picture>
+            <div class="hero-text">
+                <h1>Business Directory</h1>
+                <p>Discover our members and support local businesses in Huatulco!</p>
+                <p>Huatulco Chamber of Commerce</p>
         </section>
 
         <h1>Home</h1>
@@ -93,14 +99,22 @@
             </section>
         </div>
 
-        <section id="cards">
-            <button id="gridView" class="active"><img src="images/grid.svg" alt="">Grid View</button>
-            <button id="listView"> <img src="images/list.svg" alt="">List View</button>
+        <section class="directory-controls">
+            <h2>Business Directory</h2>
+            <div class="view-toggle">
+                <button id="gridView" class="active"> <img src="images/grid.svg" alt="grid view icon" class="gl-buttons">Grid View</button>
+                <button id="listView"> <img src="images/list.svg" alt="list view icon" class="gl-buttons">List View</button>
+            </div>
+        </section>
 
+        <section class="members-container">
+            <div id="membersGrid" class="members-grid">
+                <!-- Member cards will be inserted here -->
+            </div>
         </section>
     </main>
 
-    <Footer>
+    <footer>
         <div class="grid-footer">
             <div class="contact-info">
                 <h3>Huatulco Chamber of Commerce</h3>
@@ -126,7 +140,7 @@
 
             </div>
         </div>
-    </Footer>
+    </footer>
 </body>
 
 </html>

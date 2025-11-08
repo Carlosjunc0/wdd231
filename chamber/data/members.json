@@ -6,7 +6,7 @@
       "address": "15 Rue du Marché, Oaxaca, Mexico",
       "phone": "+52 65 71 51 97 53",
       "website": "https://mxtrading.com",
-      "image": "sahara-trading.jpg",
+      "image": "mexico-trading-co-logo.png",
       "membershipLevel": 3,
       "category": "Import/Export",
       "description": "Leading importer and exporter of Mexican goods and crafts"
@@ -17,7 +17,7 @@
       "address": "8 Place des Artisans, Oaxaca, Mexico",
       "phone": "+52 65 71 22 81 26",
       "website": "https://chipehuaag.org",
-      "image": "artisans-guild.jpg",
+      "image": "chipehua-artisans-guild-logo.png",
       "membershipLevel": 2,
       "category": "Arts & Crafts",
       "description": "Preserving traditional Mexican craftsmanship"
@@ -28,7 +28,7 @@
       "address": "25 Avenue de l'Or, Oaxaca, Mexico",
       "phone": "+52 43 18 60 36 65",
       "website": "https://pegold.mx",
-      "image": "mali-gold.jpg",
+      "image": "pe-gold-enterprises-logo.png",
       "membershipLevel": 3,
       "category": "Mining",
       "description": "Sustainable gold mining and trading"
@@ -38,8 +38,8 @@
       "name": "Huatulco Tours",
       "address": "12 Desert Trail, Oaxaca, Mexico",
       "phone": "+52 66 50 13 66 34",
-      "website": "https://saharanomadtours.com",
-      "image": "nomad-tours.jpg",
+      "website": "https://huatulcotours.com",
+      "image": "huatulco-tours-logo.png",
       "membershipLevel": 1,
       "category": "Tourism",
       "description": "Authentic experiences in nature and cultural visits"
@@ -49,8 +49,8 @@
       "name": "Oaxaca Textile",
       "address": "5 Industrial Zone, Oaxaca, Mexico",
       "phone": "+52 65 71 78 79 56",
-      "website": "https://timbuktutextiles.ml",
-      "image": "textile-mills.jpg",
+      "website": "https://oaxtextiles.ml",
+      "image": "oaxaca-textile-logo.png",
       "membershipLevel": 2,
       "category": "Manufacturing",
       "description": "Traditional and modern textile production"
@@ -61,7 +61,7 @@
       "address": "30 Oasis Road, Oaxaca, Mexico",
       "phone": "+52 65 71 49 18 25",
       "website": "https://happycorn.mx",
-      "image": "mali-dates.jpg",
+      "image": "happy-corn-logo.png",
       "membershipLevel": 1,
       "category": "Agriculture",
       "description": "Premium date cultivation and distribution"
@@ -72,7 +72,7 @@
       "address": "3 Innovation Street, Oaxaca, Mexico",
       "phone": "+52 95 17 89 01 22",
       "website": "https://oaxtech.com",
-      "image": "oax-tech.jpg",
+      "image": "oax-tech-solutions-logo.png",
       "membershipLevel": 3,
       "category": "Technology",
       "description": "IT services and digital solutions for businesses"
