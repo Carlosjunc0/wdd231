@@ -22,6 +22,9 @@
 
     <link rel="icon" href="images/beach-icon.png">
 
+    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
     <title>Huatulco | Chamber of Commerce</title>
 </head>
 
@@ -49,15 +52,80 @@
     <main class="container">
 
         <section class="hero">
+            <img src="images/hero-image.png" alt="hero image of Huatulco bay" width="1150px" height="300px"
+                loading="lazy">
+        </section>
 
-            <p>Conectamos empresas, promovemos el desarrollo económico y fortalecemos nuestra comunidad empresarial en
-                la región de Oaxaca.</p>
-            <a href="join.html" class="cta-button">Únete a Nuestra Red</a>
+        <h1>Home</h1>
+
+
+        <div class="widgets">
+            <section class="events-section">
+                <h2>Events</h2>
+                <!-- Events data will be inserted here -->
+            </section>
+
+            <section class="currentwea-section">
+                <article>
+                    <h2>Current Weather</h2>
+                    <div class="weather-content">
+                        <img src="images/cloud-sun-fill.svg" alt="cloud-sun-fill icon" class="weather-icon">
+                        <div class="weather-details">
+                            <p><strong>75° F</strong></p>
+                            <p>Party Cloudy</p>
+                            <p>High: 85°</p>
+                            <p>Low: 52°</p>
+                            <p>Humidity: 34%</p>
+                            <p>Sunrise: 7:30am</p>
+                            <p>Sunset: 9:59pm</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="forecast-section">
+                <article>
+                    <h2>Weather Forecast</h2>
+                    <div class="forecast-content">
+                        <p>Today: <strong>90°F</strong></p>
+                        <p>Wednesday: <strong>89°F</strong></p>
+                        <p>Thursday: <strong>68°F</strong></p>
+            </section>
+        </div>
+
+        <section id="cards">
+            <button id="gridView" class="active"><img src="images/grid.svg" alt="">Grid View</button>
+            <button id="listView"> <img src="images/list.svg" alt="">List View</button>
+
         </section>
     </main>
 
-    <Footer>&copy <span id="currentyear"></span> | Carlos Junco | Oax, Mexico <p>Last Modification: <span
-                id="lastModified"></span></p>
+    <Footer>
+        <div class="grid-footer">
+            <div class="contact-info">
+                <h3>Huatulco Chamber of Commerce</h3>
+                <p>Barrio de la Cruz, 70980 Santa María Huatulco, Oax.</p>
+                <p>contact@huatulcochamberofcommerce.com</p>
+                <p>+52 (951) 348 2909</p>
+            </div>
+
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/search/top/?q=huatulco" target="_blank"><img
+                        src="../images/facebook-icon.svg" alt="Facebook icon" class="social-icon"></a>
+                <a href="https://www.instagram.com/yoamohuatulco/" target="_blank"><img
+                        src="../images/instagram-icon.svg" alt="Instagram icon" class="social-icon"></a>
+                <a href="https://carlosjunc0.github.io/wdd231/" target="_blank"><img src="../images/github-icon.svg"
+                        alt="github icon" class="social-icon"></a>
+            </div>
+
+            <div class="credits">
+                <h3>WDD231 Class Project</h3>
+                <p>Carlos Junco</p>
+                <p> &copy <span id="currentyear"></span> Huatulco Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+
+            </div>
+        </div>
     </Footer>
 </body>
 
