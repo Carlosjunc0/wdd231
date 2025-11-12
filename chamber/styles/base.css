@@ -433,14 +433,16 @@
     }
 
     .grid-footer {
-    align-items: center;
-    justify-content: center;
+        align-items: center;
+        justify-content: center;
 
     }
 
-    .contact-info, .credits{
+    .contact-info,
+    .credits {
         padding: 1rem 0;
     }
+
     .contact-info h3,
     .credits h3 {
         color: var(--footertextcolor);
