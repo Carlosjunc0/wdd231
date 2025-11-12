@@ -45,9 +45,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 0;
+        padding: 10px 0;
         color: white;
+        position: relative;
     }
+
 
     .logo-container {
         color: white;
@@ -59,7 +61,7 @@
 
     .site-title {
         font-size: 1.5rem;
-        font-weight: 700;
+        font-weight: bold;
         color: white;
     }
 
@@ -75,12 +77,16 @@
 
     .nav-menu {
         display: none;
-        width: 100%;
         flex-direction: column;
-        background-color: var(--navigatorcolor);
-        margin-top: 15px;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
         border-radius: 8px;
-
+        z-index: 1000;
     }
 
     .nav-menu.active {
@@ -88,13 +94,12 @@
     }
 
     .nav-menu a {
-        display: flex;
+        display: block;
         padding: 15px 20px;
         color: white;
         text-decoration: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         text-align: center;
-        font-weight: 500;
     }
 
 
@@ -141,8 +146,9 @@
         align-items: center;
     }
 
-    .hero-text h1 {
+    .hero-text span {
         font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: bold;
         margin-bottom: 1rem;
         line-height: 1.2;
     }

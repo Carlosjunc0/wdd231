@@ -122,8 +122,9 @@
         align-items: center;
     }
 
-    .hero-text h1 {
+    .hero-text span {
         font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: bold;
         margin-bottom: 1rem;
         line-height: 1.2;
     }

@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (navMenu.classList.contains('active')) {
                 hamburgerIcon.src = '../images/x-icon.svg';
             } else {
-                hamburgerIcon.src = '../images/hamburger-button-icon.svg';
+                hamburgerIcon.src = 'images/hamburger-button-icon.svg';
             }
         });
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             link.addEventListener('click', function () {
                 navMenu.classList.remove('active');
                 body.classList.remove('mobile-menu-active');
-                hamburgerIcon.src = '../images/hamburger-button-icon.svg';
+                hamburgerIcon.src = 'images/hamburger-button-icon.svg';
             });
         });
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!event.target.closest('.nav-bar') && navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
                 body.classList.remove('mobile-menu-active');
-                hamburgerIcon.src = '../images/hamburger-button-icon.svg';
+                hamburgerIcon.src = 'images/hamburger-button-icon.svg';
             }
         });
     }
