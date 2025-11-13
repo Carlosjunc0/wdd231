@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Discover the local businesses and organizations that belong to the Huatulco Chamber of Commerce.">
+        content="Huatulco Chamber of Commerce: Connect, grow, and prosper. Events, directories, memberships, and support for community economic growth.">
     <meta name="author" content="Carlos Junco">
     <meta property="og:title" content="Huatulco Chamber of Commerce - Boosting your Business in Oaxaca">
     <meta property="og:description"
@@ -29,6 +29,7 @@
     <link rel="icon" href="images/beach-icon.png">
 
     <script src="scripts/cards.js" defer></script>
+    <script src="scripts/weather-api.js" defer></script>
 
     <title>Directory | Huatulco Chamber of Commerce</title>
 </head>
@@ -47,7 +48,7 @@
                 <nav class="nav-menu" id="nav-menu">
                     <a href="index.html">Home</a>
                     <a href="directory.html">Directory</a>
-                    <a href="#">Join</a>
+                    <a href="join.html">Join</a>
                     <a href="#">Discover</a>
                 </nav>
             </div>
@@ -56,8 +57,61 @@
 
     <main class="container">
 
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/huatulco-bay.jpg">
+                <source media="(min-width: 7680px)" srcset="images/huatulco-bay.jpg">
+                <img src="images/huatulco-bay.jpg" alt="Huatulco beach view" class="hero-image" loading="eager">
+            </picture>
+            <div class="hero-text">
+                <span>Join our community</span>
+                <p>Discover our members and support local businesses in Huatulco!</p>
+                <button onclick="location.href='join.html'">Become a Member</button>
+            </div>
+        </section>
+
+        <h1>Home</h1>
+
+
+        <div class="widgets">
+            <section class="events-section">
+                <h2>Events</h2>
+                <!-- Events data will be inserted here -->
+            </section>
+
+            <section class="currentwea-section">
+                <article>
+                    <h2>Current Weather</h2>
+                    <div class="weather-content">
+                        <img id="weather-icon" src="" alt="">
+                        <div class="weather-details">
+                            <p id="name"></p>
+                            <p id="current-weather"></p>
+                            <p id="weather-description"></p>
+                            <p id="high-weather"></p>
+                            <p id="low-weather"></p>
+                            <p id="humidity"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="forecast-section">
+                <article>
+                    <h2>Weather Forecast</h2>
+                    <div class="forecast-content">
+                        <p id="forecast-1day"></p>
+                        <p id="forecast-2day"></p>
+                        <p id="forecast-3day"></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
         <section class="directory-controls">
-            <h1>Business Directory</h1>
+            <h2>Business Directory</h2>
             <div class="view-toggle">
                 <button id="gridView" class="active"> <img src="images/grid.svg" alt="grid view icon"
                         class="gl-buttons">Grid View</button>
