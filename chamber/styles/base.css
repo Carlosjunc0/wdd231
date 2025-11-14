@@ -210,8 +210,9 @@
     }
 
     #weather-icon {
-        width: 80px;
-        height: 80px;
+        max-width: 35px;
+        width: 15vw;
+        height: auto;
         margin-right: 15px;
     }
 
@@ -302,6 +303,7 @@
         margin-bottom: 0.8rem;
         font-size: 1.3rem;
         border-bottom: none;
+        text-align: center;
     }
 
     .member-description {
@@ -309,6 +311,8 @@
         color: var(--textcolor);
         line-height: 1.4;
         flex-grow: 0;
+        text-align: center;
+        font-style: italic;
     }
 
     .divider {
@@ -326,7 +330,7 @@
     }
 
     .member-logo {
-        width: 100px;
+        width: 80px;
         height: auto;
         object-fit: cover;
     }
@@ -440,23 +444,24 @@
     /* Footer Styles */
     footer {
         background-color: var(--footercolor);
-        color: white;
     }
 
     .grid-footer {
         align-items: center;
         justify-content: center;
-
+        text-align: center;
     }
 
     .contact-info,
     .credits {
         padding: 1rem 0;
+        color: white;
     }
 
     .contact-info h3,
     .credits h3 {
         color: var(--footertextcolor);
+        margin-bottom: 0.5rem;
     }
 
     .contact-info p,
@@ -476,7 +481,6 @@
     .social-media-icons {
         display: flex;
         justify-content: space-around;
-        gap: 35px;
     }
 
 }

@@ -145,7 +145,7 @@
         cursor: pointer;
     }
 
-    
+
     .hero-text button:hover {
         background-color: #040264;
         color: white;
@@ -184,6 +184,7 @@
         padding: 0.5rem;
     }
 
+    img,
     #weather-icon {
         width: 100px;
         height: 100px;
@@ -203,6 +204,12 @@
         height: 20px;
         vertical-align: middle;
         margin-right: 8px;
+    }
+
+    .directory-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .directory-controls h2 {
@@ -274,22 +281,24 @@
 
     .member-card h3 {
         color: #2c3e50;
-        margin-bottom: 0.8rem;
         font-size: 1.3rem;
         border-bottom: none;
+        text-align: center;
     }
 
     .member-description {
-        margin-bottom: 1rem;
+        font-style: italic;
+        margin-bottom: 9px;
         color: var(--textcolor);
         line-height: 1.4;
         flex-grow: 0;
+        text-align: center;
     }
 
     .divider {
         height: 2px;
         background-color: #000;
-        margin: 10px 0 15px 0;
+        margin: 1px 0 8px 0;
         width: 100%;
     }
 
@@ -442,7 +451,10 @@
 
     .social-icon {
         filter: invert(1);
-        width: 80px;
+        max-width: 55px;
+        width: 15vw;
+        min-width: 30px;
+        height: auto;
     }
 
     .social-icon:hover {
@@ -451,6 +463,7 @@
 
     .social-media-icons {
         display: flex;
-        gap: 35px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
