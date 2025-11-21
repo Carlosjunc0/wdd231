@@ -485,6 +485,219 @@
         font-style: italic;
     }
 
+    .flex-formAndCards {
+        margin: 1.5rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /* FORM SECTION */
+    .form-section,
+    .membership-cards {
+        padding: 2rem;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .form-section h2,
+    .membership-cards h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 2rem;
+        color: var(--navigatorcolor);
+        font-weight: 700;
+    }
+
+    #joinForm {
+        padding: 1rem;
+    }
+
+    #joinForm label {
+        font-weight: 600;
+        color: var(--textcolor);
+        display: block;
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    #joinForm input,
+    #joinForm select,
+    #joinForm textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border-radius: 6px;
+        border: 1px solid #cccccc;
+
+        font-size: 1rem;
+        transition: border 0.3s, background-color 0.3s;
+    }
+
+    #joinForm input:focus,
+    #joinForm select:focus,
+    #joinForm textarea:focus {
+        border-color: var(--navigatorcolor);
+        background-color: #fff;
+        outline: none;
+    }
+
+    /* Textarea spans full width */
+    #description {
+        grid-column: span 2;
+        min-height: 120px;
+    }
+
+    .submit-btn {
+        margin-top: 1rem;
+        background: #2a4d48;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: #640238;
+    }
+
+    /* MEMBERSHIP CARDS */
+    .membership-cards .card {
+        margin-bottom: 1rem;
+        border-radius: 16px;
+        background: #eaeaea;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    /* cards animation
+    .membership-cards .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    } */
+
+    .membership-cards h3 {
+        margin-bottom: 0.5rem;
+        color: var(--textcolor);
+    }
+
+    .membership-cards button {
+        margin-top: 1rem;
+        background: #2a4d48;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .membership-cards button:hover {
+        background: #640238;
+    }
+
+    /* MODALS */
+    .modal {
+        display: none;
+        position: fixed;
+        padding-top: 120px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: 1000;
+    }
+
+    .modal-content {
+        background: white;
+        margin: auto;
+        padding: 2rem;
+        width: 40%;
+        min-width: 340px;
+        border-radius: 12px;
+        animation: popin .3s ease;
+    }
+
+    @keyframes popin {
+        from {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .modal-content button.close {
+        margin-top: 1rem;
+        background: var(--navigatorcolor);
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .thanks {
+        margin: 4rem auto;
+        max-width: 850px;
+        background: #ffffff;
+        padding: 3rem;
+        border-radius: 14px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .thanks h2 {
+        font-size: 2.4rem;
+        color: var(--navigatorcolor);
+        margin-bottom: 1.4rem;
+        font-weight: 700;
+    }
+
+    .thanks p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .data-box {
+        margin-top: 2rem;
+        background: #fafafa;
+        padding: 2rem;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .data-box p {
+        margin: 0.6rem 0;
+        justify-content: space-between;
+    }
+
+    .data-box strong {
+        color: var(--navigatorcolor);
+        font-weight: 700;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     /* Footer Styles */
     footer {
         background-color: var(--footercolor);

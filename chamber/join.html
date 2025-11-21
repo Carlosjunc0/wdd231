@@ -28,7 +28,7 @@
 
     <link rel="icon" href="images/beach-icon.png">
 
-    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/nav-footer.js" defer></script>
 
     <title>Directory | Huatulco Chamber of Commerce</title>
 </head>
@@ -47,7 +47,7 @@
                 <nav class="nav-menu" id="nav-menu">
                     <a href="index.html">Home</a>
                     <a href="directory.html">Directory</a>
-                    <a href="#">Join</a>
+                    <a href="join.html">Join</a>
                     <a href="#">Discover</a>
                 </nav>
             </div>
@@ -56,7 +56,157 @@
 
     <main class="container">
 
+        <div class="flex-formAndCards">
+            <!-- FORM -->
+            <section class="form-section">
+                <h2>Become a Member</h2>
+
+                <form method="get" action="thankyou.html" id="joinForm">
+
+                    <label for="first">
+                        First Name
+                    </label>
+                    <input type="text" id="first" name="first" required autocomplete="given-name"
+                        title="Enter your first name">
+
+
+                    <label for="last">
+                        Last Name
+                    </label>
+                    <input type="text" id="last" name="last" required autocomplete="family-name"
+                        title="Enter your last name">
+
+
+                    <label for="orgtitle">
+                        Organizational Title
+                    </label>
+                    <input type="text" id="orgtitle" name="orgtitle" autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}" title="At least 7 characters: only letters, hyphens, and spaces">
+
+
+                    <label for="email">
+                        Email
+                    </label>
+                    <input type="email" id="email" name="email" required autocomplete="email"
+                        placeholder="example@email.com" title="Enter a valid email address">
+
+
+                    <label for="phone">
+                        Mobile Phone
+                    </label>
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                        title="Enter your mobile number">
+
+
+                    <label for="organization">
+                        Business / Organization Name
+                    </label>
+                    <input type="text" id="organization" name="organization" required autocomplete="organization"
+                        title="Enter your business name">
+
+
+                    <label for="membership">
+                        Membership Level
+                    </label>
+                    <select id="membership" name="membership" required title="Select a membership level">
+                        <option value="">Choose one...</option>
+                        <option value="np">NP Membership (Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+
+                    <label for="description">
+                        Business Description
+                    </label>
+                    <textarea id="description" name="description" title="Describe your business"></textarea>
+
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Apply For Membership" class="submit-btn">
+
+                </form>
+            </section>
+
+
+            <!-- MEBERSHIP CARDS -->
+            <section class="membership-cards">
+
+                <h2>Membership Levels</h2>
+                
+                <div class="card fade-in">
+                    <h3>Non Profit Membership Level</h3>
+                    <button data-modal="npModal">Learn more</button>
+                </div>
+
+                <div class="card fade-in">
+                    <h3>Bronze Membership</h3>
+                    <button data-modal="bronzeModal">Learn more</button>
+                </div>
+
+                <div class="card fade-in">
+                    <h3>Silver Membership</h3>
+                    <button data-modal="silverModal">Learn more</button>
+                </div>
+
+                <div class="card fade-in">
+                    <h3>Gold Membership</h3>
+                    <button data-modal="goldModal">Learn more</button>
+                </div>
+
+            </section>
+            <!--  MODALS  -->
+            <div id="npModal" class="modal">
+                <div class="modal-content">
+                    <h3>NP Membership Benefits</h3>
+                    <ul>
+                        <li>Free membership</li>
+                        <li>Access to monthly newsletters</li>
+                        <li>Community volunteer events</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+
+            <div id="bronzeModal" class="modal">
+                <div class="modal-content">
+                    <h3>Bronze Membership Benefits</h3>
+                    <ul>
+                        <li>Business directory listing</li>
+                        <li>Member networking events</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+
+            <div id="silverModal" class="modal">
+                <div class="modal-content">
+                    <h3>Silver Membership Benefits</h3>
+                    <ul>
+                        <li>Everything in Bronze</li>
+                        <li>Event discounts</li>
+                        <li>Business spotlight feature</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+
+            <div id="goldModal" class="modal">
+                <div class="modal-content">
+                    <h3>Gold Membership Benefits</h3>
+                    <ul>
+                        <li>Everything in Silver</li>
+                        <li>Priority advertising</li>
+                        <li>VIP event access</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+        </div>
     </main>
+
 
     <footer>
         <div class="grid-footer">

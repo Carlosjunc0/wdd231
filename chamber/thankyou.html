@@ -29,8 +29,6 @@
     <link rel="icon" href="images/beach-icon.png">
 
     <script src="scripts/nav-footer.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
-    <script src="scripts/weather-api.js" defer></script>
 
     <title>Directory | Huatulco Chamber of Commerce</title>
 </head>
@@ -57,73 +55,31 @@
     </header>
 
     <main class="container">
+        <div class="thanks">
+            <h2>Thank You for Joining!</h2>
+            <p>Your membership details:</p>
 
-        <section class="hero">
-            <picture>
-                <source media="(min-width: 1200px)" srcset="images/huatulco-bay.jpg">
-                <source media="(min-width: 7680px)" srcset="images/huatulco-bay.jpg">
-                <img src="images/huatulco-bay.jpg" alt="Huatulco beach view" class="hero-image" loading="eager">
-            </picture>
-            <div class="hero-text">
-                <span>Join our community</span>
-                <p>Discover our members and support local businesses in Huatulco!</p>
-                <a href="join.html"><button>Become a Member</button></a>
+            <div class="data-box">
+                <p><strong>First Name:</strong> <span id="first"></span></p>
+                <p><strong>Last Name:</strong> <span id="last"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Mobile:</strong> <span id="phone"></span></p>
+                <p><strong>Business:</strong> <span id="organization"></span></p>
+                <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
             </div>
-        </section>
-
-        <h1>Home</h1>
-
-
-        <div class="widgets">
-            <section class="events-section">
-                <h2>Events</h2>
-                <!-- Events data will be inserted here -->
-            </section>
-
-            <section class="currentwea-section">
-                <article>
-                    <h2>Current Weather</h2>
-                    <div class="weather-content">
-                        <img id="weather-icon" src="" alt="">
-                        <div class="weather-details">
-                            <p id="name"></p>
-                            <p id="current-weather"></p>
-                            <p id="weather-description"></p>
-                            <p id="high-weather"></p>
-                            <p id="low-weather"></p>
-                            <p id="humidity"></p>
-                            <p id="sunrise"></p>
-                            <p id="sunset"></p>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section class="forecast-section">
-                <article>
-                    <h2>Weather Forecast</h2>
-                    <div class="forecast-content">
-                        <p id="forecast-1day"></p>
-                        <p id="forecast-2day"></p>
-                        <p id="forecast-3day"></p>
-                    </div>
-                </article>
-            </section>
         </div>
-
-        <section id="spotlights" class="spotlights">
-            <h2>Business Spotlights</h2>
-            <p class="spotlight-intro">
-                Meet some of the outstanding businesses that drive growth and strengthen the business community in
-                Huatulco.
-            </p>
-            <div class="spotlight-container" id="spotlightContainer">
-                <!-- spotlights -->
-            </div>
-        </section>
     </main>
+    <script>
+        const params = new URLSearchParams(window.location.search);
 
-    </main>
+        document.getElementById("first").textContent = params.get("first");
+        document.getElementById("last").textContent = params.get("last");
+        document.getElementById("email").textContent = params.get("email");
+        document.getElementById("phone").textContent = params.get("phone");
+        document.getElementById("organization").textContent = params.get("organization");
+        document.getElementById("timestamp").textContent = params.get("timestamp");
+    </script>
+
 
     <footer>
         <div class="grid-footer">
