@@ -13,7 +13,6 @@
     }
 
     * {
-        margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
@@ -24,7 +23,7 @@
         color: var(--textcolor);
     }
 
-    /* Header Styles */
+    /* Header styles */
     .container,
     .grid-footer {
         max-width: 100%;
@@ -73,7 +72,7 @@
         filter: invert(1);
     }
 
-    /* Navigation Menu */
+    /* Navigation menu */
 
     .nav-menu {
         display: none;
@@ -108,7 +107,7 @@
         color: var(--footertextcolor);
     }
 
-    /* Hero Section */
+    /* Hero section */
     .hero {
         position: relative;
         width: 100%;
@@ -315,7 +314,7 @@
         background: var(--footertextcolor);
     }
 
-    /* Member Cards Styles */
+    /* Member cards styles */
     .members-container {
         max-width: 1200px;
         margin: 0 auto;
@@ -542,47 +541,105 @@
         border-radius: 6px;
     }
 
-    /* MEMBERSHIP CARDS MOBILE */
+    /* Membership cards */
+    dialog {
+        border: none;
+        border-radius: 12px;
+        padding: 2.5rem;
+        max-width: 400px;
+        width: 90%;
+        background: #ffffff;
+        animation: fadeInScale .35s ease forwards;
+    }
+
+    dialog::backdrop {
+        background: rgba(0, 0, 0, 0.55);
+        animation: backdropFade .35s ease forwards;
+    }
+
     .membership-cards {
         display: grid;
-        grid-template-columns: 1fr;
         gap: 1.2rem;
-        margin-top: 2rem;
+    }
+
+    dialog strong {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--navigatorcolor);
+    }
+
+    dialog br+br {
+        margin-bottom: 0.8rem;
+    }
+
+    .closeModal {
+        background: var(--navigatorcolor);
+        color: white;
+        border: none;
+        padding: .7rem 1.4rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background .25s ease;
     }
 
     .membership-cards .card {
-        background: #eaeaea;
-        padding: 1.3rem;
-        border-radius: 10px;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        background: #ffffff;
+        padding: 1.4rem;
+        border-radius: 12px;
         text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+        border: 1px solid #d8d8d8;
+        transition: transform .25s ease, box-shadow .25s ease;
     }
 
-    .membership-cards h2 {
-        text-align: center;
-        margin-bottom: 1rem;
-        color: var(--textcolor);
-        font-size: 1.8rem;
+    .membership-cards .level-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--navigatorcolor);
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Button inside cards */
+    .membership-cards button {
+        width: 100%;
+        padding: .9rem;
+        font-size: 1rem;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
     .membership-cards button {
-        margin-top: 1rem;
-        background: var(--footercolor);
-        color: white;
-        padding: 0.8rem;
-        border: none;
-        border-radius: 6px;
+        background: var(--navigatorcolor);
     }
 
-    /* MOBILE MODALS */
-    .modal-content {
-        width: 85%;
-        padding: 1.5rem;
+    /* Animation */
+    @keyframes fadeInScale {
+        from {
+            opacity: 0;
+            transform: scale(.85);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 
+    @keyframes backdropFade {
+        from {
+            opacity: 0;
+        }
 
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Than you section */
     .thanks {
-        margin-top: 2rem;
         text-align: center;
         padding: 1.5rem;
     }
@@ -614,9 +671,9 @@
 
     .data-box strong {
         color: var(--navigatorcolor);
-    } 
+    }
 
-    /* Footer Styles */
+    /* Footer styles */
     footer {
         background-color: var(--footercolor);
     }

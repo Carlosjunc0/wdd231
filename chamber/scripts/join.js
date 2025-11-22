@@ -1,29 +1,32 @@
-// Set timestamp value when page loads
+// Timestamp
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("timestamp").value = new Date().toISOString();
 });
 
-// ===== MODAL LOGIC =====
-const modalButtons = document.querySelectorAll("[data-modal]");
-const modals = document.querySelectorAll(".modal");
-const closeButtons = document.querySelectorAll(".close");
-
-modalButtons.forEach(btn => {
+// OPEN MODAL BUTTONS
+const openButtons = document.querySelectorAll(".openModal");
+openButtons.forEach(btn => {
     btn.addEventListener("click", () => {
-        document.getElementById(btn.dataset.modal).style.display = "block";
+        const dialog = document.getElementById(btn.dataset.target);
+        dialog.showModal();
     });
 });
 
+// CLOSE MODAL BUTTONS
+const closeButtons = document.querySelectorAll(".closeModal");
 closeButtons.forEach(btn => {
     btn.addEventListener("click", () => {
-        btn.closest(".modal").style.display = "none";
+        btn.closest("dialog").close();
     });
 });
 
-// Close modal when clicking outside
-window.addEventListener("click", e => {
-    modals.forEach(modal => {
-        if (e.target === modal) modal.style.display = "none";
+// CLOSE DIALOG CLICKING OUTSIDE // Aditional Improvement
+document.querySelectorAll("dialog").forEach(dialog => {
+    dialog.addEventListener("click", (e) => {
+        const rect = dialog.getBoundingClientRect();
+        if (e.clientX < rect.left || e.clientX > rect.right ||
+            e.clientY < rect.top || e.clientY > rect.bottom) {
+            dialog.close();
+        }
     });
 });
- 

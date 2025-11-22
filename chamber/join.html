@@ -29,8 +29,9 @@
     <link rel="icon" href="images/beach-icon.png">
 
     <script src="scripts/nav-footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
-    <title>Directory | Huatulco Chamber of Commerce</title>
+    <title>Join | Huatulco Chamber of Commerce</title>
 </head>
 
 <body>
@@ -55,6 +56,8 @@
     </header>
 
     <main class="container">
+
+        <h1>Join Us</h1>
 
         <div class="flex-formAndCards">
             <!-- FORM -->
@@ -135,75 +138,60 @@
             <section class="membership-cards">
 
                 <h2>Membership Levels</h2>
-                
-                <div class="card fade-in">
-                    <h3>Non Profit Membership Level</h3>
-                    <button data-modal="npModal">Learn more</button>
-                </div>
 
-                <div class="card fade-in">
-                    <h3>Bronze Membership</h3>
-                    <button data-modal="bronzeModal">Learn more</button>
-                </div>
+                <section class="card">
+                    <span class="level-name">Non Profit Membership</span>
+                    <button class="openModal" data-target="npModal">Learn more</button>
+                </section>
 
-                <div class="card fade-in">
-                    <h3>Silver Membership</h3>
-                    <button data-modal="silverModal">Learn more</button>
-                </div>
+                <section class="card">
+                    <span class="level-name">Bronze Membership</span>
+                    <button class="openModal" data-target="bronzeModal">Learn more</button>
+                </section>
 
-                <div class="card fade-in">
-                    <h3>Gold Membership</h3>
-                    <button data-modal="goldModal">Learn more</button>
-                </div>
+                <section class="card">
+                    <span class="level-name">Silver Membership</span>
+                    <button class="openModal" data-target="silverModal">Learn more</button>
+                </section>
+
+                <section class="card">
+                    <span class="level-name">Gold Membership</span>
+                    <button class="openModal" data-target="goldModal">Learn more</button>
+                </section>
 
             </section>
+
             <!--  MODALS  -->
-            <div id="npModal" class="modal">
-                <div class="modal-content">
-                    <h3>NP Membership Benefits</h3>
-                    <ul>
-                        <li>Free membership</li>
-                        <li>Access to monthly newsletters</li>
-                        <li>Community volunteer events</li>
-                    </ul>
-                    <button class="close">Close</button>
-                </div>
-            </div>
+            <dialog id="npModal">
+                <strong>Non Profit Membership Benefits</strong><br><br>
+                ✔︎ Free membership<br>
+                ✔︎ Monthly newsletters<br>
+                ✔︎ Community volunteer events<br><br>
+                <button class="closeModal">Close</button>
+            </dialog>
 
-            <div id="bronzeModal" class="modal">
-                <div class="modal-content">
-                    <h3>Bronze Membership Benefits</h3>
-                    <ul>
-                        <li>Business directory listing</li>
-                        <li>Member networking events</li>
-                    </ul>
-                    <button class="close">Close</button>
-                </div>
-            </div>
+            <dialog id="bronzeModal">
+                <strong>Bronze Membership Benefits</strong><br><br>
+                ✔︎ Business directory listing<br>
+                ✔︎ Member networking events<br><br>
+                <button class="closeModal">Close</button>
+            </dialog>
 
-            <div id="silverModal" class="modal">
-                <div class="modal-content">
-                    <h3>Silver Membership Benefits</h3>
-                    <ul>
-                        <li>Everything in Bronze</li>
-                        <li>Event discounts</li>
-                        <li>Business spotlight feature</li>
-                    </ul>
-                    <button class="close">Close</button>
-                </div>
-            </div>
+            <dialog id="silverModal">
+                <strong>Silver Membership Benefits</strong><br><br>
+                ✔︎ Everything in Bronze<br>
+                ✔︎ Event discounts<br>
+                ✔︎ Business spotlight feature<br><br>
+                <button class="closeModal">Close</button>
+            </dialog>
 
-            <div id="goldModal" class="modal">
-                <div class="modal-content">
-                    <h3>Gold Membership Benefits</h3>
-                    <ul>
-                        <li>Everything in Silver</li>
-                        <li>Priority advertising</li>
-                        <li>VIP event access</li>
-                    </ul>
-                    <button class="close">Close</button>
-                </div>
-            </div>
+            <dialog id="goldModal">
+                <strong>Gold Membership Benefits</strong><br><br>
+                ✔︎ Everything in Silver<br>
+                ✔︎ Priority advertising<br>
+                ✔︎ VIP event access<br><br>
+                <button class="closeModal">Close</button>
+            </dialog>
         </div>
     </main>
 
