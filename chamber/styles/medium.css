@@ -1,0 +1,25 @@
+@media screen and (min-width: 38rem) {
+
+    /* Discover page styles */
+    #visit-message {
+        background: #eef6ff;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid #0077cc;
+        font-size: 1rem;
+        border-radius: 6px;
+    }
+
+    #discover-grid div {
+
+        display: grid;
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image location";
+    }
+
+    #discover-grid div img {
+        width: 300px;
+    }
+}

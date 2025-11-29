@@ -673,6 +673,54 @@
         color: var(--navigatorcolor);
     }
 
+    /* Discover page */
+
+    /* message */
+    #visit-message {
+        background: #eef6ff;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid #0077cc;
+        font-size: 1rem;
+        border-radius: 6px;
+    }
+
+    /* Discover grid cards */
+    #discover-grid div {
+        margin: 1rem 8px;
+        border: 1px solid #999;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        overflow: hidden;
+
+        display: grid;
+        grid-template-areas:
+            "name"
+            "image"
+            "description"
+            "location";
+    }
+
+    #discover-grid div h2 {
+        margin: 1rem 10px;
+        grid-area: name;
+    }
+
+    #discover-grid div img {
+        width: 100%;
+        grid-area: image;
+    }
+
+    #discover-grid div p {
+        margin: 1rem 10px;
+        grid-area: description;
+    }
+
+    #discover-grid div address {
+        margin: 0 10px 10px 10px;
+        grid-area: location;
+    }
+
     /* Footer styles */
     footer {
         background-color: var(--footercolor);

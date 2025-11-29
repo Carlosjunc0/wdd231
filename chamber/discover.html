@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Discover the local businesses and organizations that belong to the Huatulco Chamber of Commerce.">
+        content="Huatulco Chamber of Commerce: Connect, grow, and prosper. Events, directories, memberships, and support for community economic growth.">
     <meta name="author" content="Carlos Junco">
     <meta property="og:title" content="Huatulco Chamber of Commerce - Boosting your Business in Oaxaca">
     <meta property="og:description"
@@ -24,14 +24,14 @@
 
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 
     <link rel="icon" href="images/beach-icon.png">
 
-    <script src="scripts/cards.js" defer></script>
     <script src="scripts/nav-footer.js" defer></script>
 
-    <title>Directory | Huatulco Chamber of Commerce</title>
+    <title>Join | Huatulco Chamber of Commerce</title>
 </head>
 
 <body>
@@ -57,21 +57,13 @@
 
     <main class="container">
 
-        <section class="directory-controls">
-            <h1>Business Directory</h1>
-            <div class="view-toggle">
-                <button id="gridView" class="active"> <img src="images/grid.svg" alt="grid view icon"
-                        class="gl-buttons">Grid View</button>
-                <button id="listView"> <img src="images/list.svg" alt="list view icon" class="gl-buttons">List
-                    View</button>
-            </div>
-        </section>
+        <div id="visit-message">
+            <!-- localstorage, show messages -->
+        </div>
 
-        <section class="members-container">
-            <div id="membersGrid" class="members-grid">
-                <!-- Member cards will be inserted here -->
-            </div>
-        </section>
+        <div id="discover-grid">
+            <!-- cards created with js -->
+        </div>
     </main>
 
     <footer>
@@ -101,6 +93,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/discover.js" type="module"></script>
+
 </body>
 
 </html>
