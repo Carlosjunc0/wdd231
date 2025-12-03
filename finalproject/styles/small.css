@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+
+    .hamburger-icon {
+        background-color: white;
+        width: 30px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav-menu a {
+        display: none;
+    }
+
+
+}

@@ -1,37 +1,43 @@
 :root {
     --primary-color: ;
     --secondary-color: #272936;
-    --font-family: 'Arial, sans-serif';
     --button-color: #ff6f00;
-    --section-color: #202020;
+    --section-color: #151720;
     --black-color: #000000;
     --white-color: #FFFFFF;
 }
 
+/* ----------- General Styles -----------*/
+
 body {
-    font-family: var(--font-family);
-    color: var(--black-color);
-    background: #ededed;
+    font-family: "Arimo", sans-serif;
+    font-size: large;
+    line-height: 1.6;
+    color: var(--white-color);
+    background: rgb(244, 236, 236);
     padding: 0;
 }
 
 header {
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
-    background: -webkit-linear-gradient(90deg, #0b0d0f, #1a1d21, #292e36);
-    background: linear-gradient(90deg, #0b0d0f, #1a1d21, #292e36);
+    background: #0b0d0f;
     border-bottom: 3px solid transparent;
-    border-image: linear-gradient(90deg, #7f7c95, #36385e) 1 ;
 }
 
 .page-wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+main .page-wrapper {
+    padding-top: 55px;
+}
+
+/* ----------- Header and nav styles -----------*/
 
 .header-container {
     display: flex;
@@ -49,19 +55,137 @@ header {
 .hamburger-icon {
     display: none;
 }
+
 nav {
     display: flex;
     align-items: center;
     gap: 30px;
 }
+
 .nav-menu a {
     color: white;
     text-decoration: none;
     gap: 100px;
 }
 
-footer {
-    padding: 20px 0;
-    background: #1a1d21;
+/* ----------- Index page styles ----------- */
+
+/* Hero section styles */
+#typeWriter {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    padding-right: 5px;
+    overflow: hidden;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    pointer-events: none;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* About me section using grid areas*/
+.about-me-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+        "image title"
+        "image description";
+    background: var(--black-color);
     color: var(--white-color);
+
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.about-me-photo h1 {
+    grid-area: title;
+}
+
+.about-me-photo p {
+    grid-area: description;
+}
+
+.about-me-photo {
+    width: 300px;
+    border-radius: 10px;
+    grid-area: image;
+}
+
+.about-me-text {
+    padding: 20px;
+}
+
+/* Video section styles */
+
+.video {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+
+/* footer styles */
+footer {
+    background: #0b0d0f;
+    color: var(--white-color);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-areas:
+        "text menu icon";
+    padding: 1rem;
+    font-size: 0.9rem;
+    gap: 1rem;
+}
+
+.footer-content .copyright {
+    grid-area: text;
+}
+
+.author {
+    color: #888;
+}
+
+.footer-content .nav-footer a {
+    grid-area: menu;
+    text-decoration: none;
+    color: #888;
+}
+
+.footer-content nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.footer-content .nav-footer a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #888;
+    font-size: 28px;
+    margin: 6px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
 }
