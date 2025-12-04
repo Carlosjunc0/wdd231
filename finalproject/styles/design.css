@@ -34,7 +34,7 @@ header {
 }
 
 main .page-wrapper {
-    padding-top: 55px;
+    padding-top: 87px;
 }
 
 /* ----------- Header and nav styles -----------*/
@@ -43,7 +43,7 @@ main .page-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 1rem;
 }
 
 .logo {
@@ -63,9 +63,13 @@ nav {
 }
 
 .nav-menu a {
-    color: white;
+    color: #888;
     text-decoration: none;
     gap: 100px;
+}
+
+.nav-menu a:hover {
+    color: #fff;
 }
 
 /* ----------- Index page styles ----------- */
@@ -137,7 +141,123 @@ nav {
     border-radius: 10px;
 }
 
+/* ----------- Index page styles ----------- */
 
+/* form styles */
+.form-section {
+    margin: 20px 0;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.form-section h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+#joinForm {
+    padding: 1rem;
+}
+
+#joinForm label {
+    font-weight: 600;
+    color: var(--black-color);
+    display: block;
+    padding: 1rem 0 0.5rem 0;
+}
+
+#joinForm input,
+#joinForm select,
+#joinForm textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    font-size: 1rem;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+/* Textarea spans full width */
+#description {
+    grid-column: span 2;
+    min-height: 120px;
+}
+
+.submit-btn {
+    margin-top: 1rem;
+    background: var(--black-color);
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #414863;
+}
+
+/* ----------- Thanks page styles ----------- */
+
+/* Thank you section */
+.thanks {
+    margin: 4rem auto;
+    max-width: 850px;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.thanks h2 {
+    font-size: 2.4rem;
+    color: var(--black-color);
+}
+
+.thanks p {
+    color: var(--black-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.data-box {
+    margin: 2rem;
+    background: #fafafa;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.data-box p {
+    color: var(--black-color);
+    margin: 0.6rem 0;
+    justify-content: space-between;
+}
+
+.data-box strong {
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* footer styles */
 footer {
@@ -154,6 +274,11 @@ footer {
     gap: 1rem;
 }
 
+.social-icons a,
+.social-icons a i {
+    text-decoration: none !important;
+}
+
 .footer-content .copyright {
     grid-area: text;
 }
@@ -162,8 +287,7 @@ footer {
     color: #888;
 }
 
-.footer-content .nav-footer a {
-    grid-area: menu;
+.nav-footer a {
     text-decoration: none;
     color: #888;
 }

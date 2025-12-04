@@ -25,11 +25,10 @@
     <link rel="stylesheet" href="styles/design.css">
 
     <script src="scripts/nav-footer.js" defer></script>
-    <script src="scripts/typewriter.js" defer></script>
 
     <link rel="icon" href="images/logo-icon.webp">
 
-    <title>Home | Alow</title>
+    <title>Contact | Alow</title>
 </head>
 
 <body>
@@ -57,32 +56,64 @@
     <main>
         <div class="page-wrapper">
 
-            <section class="hero">
-                <h1 id="typeWriter"></h1>
+            <section class="form">
 
-                <picture>
-                    <source srcset="images/hero-image.webp" type="image/webp">
-                    <img src="images/hero-image.jpg" alt="DJ Alow performing at a music festival" class="hero-image"
-                        loading="eager">
-                </picture>
-            </section>
+                <div class="flex">
+                    <!-- FORM -->
+                    <section class="form-section">
+                        <h1>Send a Message</h1>
+
+                        <form method="get" action="thankyou.html" id="joinForm">
+
+                            <label for="first">
+                                First Name
+                            </label>
+                            <input type="text" id="first" name="first" required autocomplete="given-name"
+                                title="Enter your first name">
 
 
-            <div class="about-me-section">
+                            <label for="last">
+                                Last Name
+                            </label>
+                            <input type="text" id="last" name="last" required autocomplete="family-name"
+                                title="Enter your last name">
 
-                <img fetchpriority="low" src="images/alow-portrait.webp" alt="photo of dj alow" class="about-me-photo">
 
-                <div class="about-me-text">
-                    <h2>About Me</h2>
+                            <label for="email">
+                                Email
+                            </label>
+                            <input type="email" id="email" name="email" required autocomplete="email"
+                                placeholder="example@email.com" title="Enter a valid email address">
 
-                    <p>I learned to mix music when I was 13, and since then I have felt connected to every sound, every
-                        rhythm, and every song. I have participated in several events, and my biggest dream is to play
-                        my
-                        own songs at Tomorrowland.</p>
+
+                            <label for="phone">
+                                Mobile Phone
+                            </label>
+                            <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                                title="Enter your mobile number">
+
+                            <label for="purpose">
+                                Porpuse
+                            </label>
+                            <select id="purpose" name="purpose" required title="Select your reason">
+                                <option value="">Choose one...</option>
+                                <option value="Join Alow community">Join Alow community</option>
+                                <option value="Request a quote">Request a quote</option>
+                                <option value="Collaborations">Collaborations</option>
+                                <option value="Suggestions">Suggestions</option>
+                            </select>
+                            <label for="description">
+                                Description
+                            </label>
+                            <textarea id="description" name="description" required autocomplete="given-name"
+                                title="Describe your case"></textarea>
+
+                            <input type="submit" value="Publish" class="submit-btn">
+
+                        </form>
+                    </section>
                 </div>
-            </div>
-        </div>
-
+            </section>
     </main>
 
     <footer>

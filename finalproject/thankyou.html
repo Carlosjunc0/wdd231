@@ -25,11 +25,10 @@
     <link rel="stylesheet" href="styles/design.css">
 
     <script src="scripts/nav-footer.js" defer></script>
-    <script src="scripts/typewriter.js" defer></script>
 
     <link rel="icon" href="images/logo-icon.webp">
 
-    <title>Home | Alow</title>
+    <title>Contact | Alow</title>
 </head>
 
 <body>
@@ -56,32 +55,34 @@
 
     <main>
         <div class="page-wrapper">
+            <div class="thanks">
+                <h2>Thank You!</h2>
+                <p><strong>I will contact you as soon as possible.</strong></p>
+                <p>Details of your message:</p>
 
-            <section class="hero">
-                <h1 id="typeWriter"></h1>
-
-                <picture>
-                    <source srcset="images/hero-image.webp" type="image/webp">
-                    <img src="images/hero-image.jpg" alt="DJ Alow performing at a music festival" class="hero-image"
-                        loading="eager">
-                </picture>
-            </section>
-
-
-            <div class="about-me-section">
-
-                <img fetchpriority="low" src="images/alow-portrait.webp" alt="photo of dj alow" class="about-me-photo">
-
-                <div class="about-me-text">
-                    <h2>About Me</h2>
-
-                    <p>I learned to mix music when I was 13, and since then I have felt connected to every sound, every
-                        rhythm, and every song. I have participated in several events, and my biggest dream is to play
-                        my
-                        own songs at Tomorrowland.</p>
+                <div class="data-box">
+                    <p><strong>First Name:</strong> <span id="first"></span></p>
+                    <p><strong>Last Name:</strong> <span id="last"></span></p>
+                    <p><strong>Email:</strong> <span id="email"></span></p>
+                    <p><strong>Mobile:</strong> <span id="phone"></span></p>
+                    <p><strong>Purpose:</strong> <span id="purpose"></span></p>
+                    <p><strong>Description:</strong> <span id="description"></span></p>
+                    <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
                 </div>
             </div>
-        </div>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("first").textContent = params.get("first");
+        document.getElementById("last").textContent = params.get("last");
+        document.getElementById("email").textContent = params.get("email");
+        document.getElementById("phone").textContent = params.get("phone");
+        document.getElementById("purpose").textContent = params.get("purpose");
+        document.getElementById("description").textContent = params.get("description");
+        document.getElementById("timestamp").textContent = params.get("timestamp");
+    </script>
 
     </main>
 
