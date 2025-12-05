@@ -13,3 +13,11 @@ const text = "Welcome to my website!";
   }
 
   typeWriter();
+  
+const items = document.querySelectorAll('.faq-item');
+
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});

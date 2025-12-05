@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "name": "Sunset Vibes Festival",
+      "date": "2024-10-12",
+      "image": "images/events/sunset-vibes.jpg",
+      "description": "A high-energy sunset electronic festival where DJ Alow opened the main stage with a deep house set."
+    },
+    {
+      "name": "Night Pulse Club Party",
+      "date": "2024-09-28",
+      "image": "images/events/night-pulse.jpg",
+      "description": "Private club event featuring local DJs, where DJ Alow delivered a progressive set that lit up the night."
+    },
+    {
+      "name": "ElectroWave Arena",
+      "date": "2024-08-30",
+      "image": "images/events/electrowave-arena.jpg",
+      "description": "A massive arena event with over 5,000 attendees. DJ Alow performed a 1-hour live remix set."
+    },
+    {
+      "name": "Summer Beats Rooftop",
+      "date": "2024-08-10",
+      "image": "images/events/summer-beats.jpg",
+      "description": "An intimate rooftop gathering filled with tropical house and chill EDM vibes."
+    },
+    {
+      "name": "Oaxaca Music Expo",
+      "date": "2024-07-20",
+      "image": "images/events/oaxaca-music-expo.jpg",
+      "description": "A music expo celebrating local talent. DJ Alow presented a special tribal-house mix."
+    },
+    {
+      "name": "Bass Storm Party",
+      "date": "2024-06-28",
+      "image": "images/events/bass-storm.jpg",
+      "description": "Underground bass event where DJ Alow collaborated with two other DJs for a dual-stage rotation set."
+    },
+    {
+      "name": "Neon Night Experience",
+      "date": "2024-06-10",
+      "image": "images/events/neon-night.jpg",
+      "description": "High-energy neon party with lights, lasers, and DJ Alow headlining the night session."
+    },
+    {
+      "name": "Electric Garden Fest",
+      "date": "2024-05-18",
+      "image": "images/events/electric-garden.jpg",
+      "description": "Outdoor event surrounded by nature, with a melodic techno performance from DJ Alow."
+    },
+    {
+      "name": "Future Sound Showcase",
+      "date": "2024-04-29",
+      "image": "images/events/future-sound.jpg",
+      "description": "A showcase introducing upcoming DJs. DJ Alow premiered 3 unreleased tracks."
+    },
+    {
+      "name": "Rave Under the Stars",
+      "date": "2024-04-02",
+      "image": "images/events/rave-under-stars.jpg",
+      "description": "A nighttime rave in the mountains with a breathtaking atmosphere and an energetic closing set."
+    }
+  ]
+}

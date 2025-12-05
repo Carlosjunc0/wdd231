@@ -26,6 +26,8 @@
 
     <script src="scripts/nav-footer.js" defer></script>
     <script src="scripts/typewriter.js" defer></script>
+    <script src="scripts/events-slider.js" defer></script>
+
 
     <link rel="icon" href="images/logo-icon.webp">
 
@@ -57,6 +59,7 @@
     <main>
         <div class="page-wrapper">
 
+            <!-- Hero Section -->
             <section class="hero">
                 <h1 id="typeWriter"></h1>
 
@@ -67,7 +70,7 @@
                 </picture>
             </section>
 
-
+            <!-- About Section -->
             <div class="about-me-section">
 
                 <img fetchpriority="low" src="images/alow-portrait.webp" alt="photo of dj alow" class="about-me-photo">
@@ -82,14 +85,47 @@
                 </div>
             </div>
 
-            <section class="discover-section">
-                <h3>Discover latest events and news</h3>
-                <p></p>
-            </section>
+            <div class="events-slider-container">
+                <button class="slider-btn prev">❮</button>
+                <div class="events-slider" id="slider"></div>
+                <button class="slider-btn next">❯</button>
+            </div>
 
-            <section class="questions">
-                
-            </section>
+            <!-- FAQ Section -->
+            <h3>FAQ - Frequently Asked Questions</h3>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Does DJ Alow perform at private events?
+                        <span class="arrow">▶</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, DJ Alow performs at all kinds of events.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How to contact DJ Alow?
+                        <span class="arrow">▶</span>
+                    </div>
+                    <div class="faq-answer">
+                        You can call or send a WhatsApp message to 951 499 7616, or you can send me an email at
+                        junidrops.official@gmail.com.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Proposals, collaborations, and quotes
+                        <span class="arrow">▶</span>
+                    </div>
+                    <div class="faq-answer">
+                        On the contact page, you can describe your situation to me and I will get back to you as soon as
+                        possible.
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
