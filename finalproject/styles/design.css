@@ -136,27 +136,26 @@ nav {
 .events-slider-container {
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     overflow: hidden;
 
 }
 
-/* SLIDER */
+/* Slider */
 .events-slider {
     display: flex;
     transition: transform 0.6s ease-in-out;
 }
 
-/* CADA IMAGEN */
+/* Images */
 .events-slider img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     flex-shrink: 0;
-    border-radius: 15px;
 }
 
-/* BOTONES */
+/* Buttons */
 .slider-btn {
     position: absolute;
     top: 50%;
@@ -167,7 +166,6 @@ nav {
     font-size: 2.2rem;
     padding: 0.4rem 0.8rem;
     cursor: pointer;
-    border-radius: 8px;
     transition: 0.3s ease;
     z-index: 10;
 }
@@ -184,13 +182,6 @@ nav {
     right: 10px;
 }
 
-/* RESPONSIVE 
-@media (max-width: 700px) {
-    .events-slider img {
-        height: 300px;
-    }
-}
-*/
 /* FAQ section */
 
 h3 {
@@ -238,6 +229,10 @@ h3 {
 }
 
 /* ----------- Discover page styles ----------- */
+
+.discover-h1 {
+    color: var(--black-color);
+}
 
 /* Events Cards */
 .events-section {
@@ -296,8 +291,7 @@ h3 {
 /* Video section styles */
 
 .video {
-    width: 300px;
-    border-radius: 10px;
+    width: 100%;
 }
 
 /* ----------- Contact page styles ----------- */
