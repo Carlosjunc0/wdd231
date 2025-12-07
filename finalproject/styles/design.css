@@ -37,7 +37,6 @@ header {
     justify-content: center;
 }
 
-/* IMPORTANTE: El hamburger-icon debe estar oculto por defecto en large.css */
 .hamburger-icon {
     display: none;
     background: none;
@@ -177,7 +176,7 @@ dialog {
     animation: modalFadeIn 0.3s ease-out;
 }
 
-/* Contenido del modal */
+/* Modal styles */
 .modal-content {
     padding: 30px;
     position: relative;
@@ -198,7 +197,7 @@ dialog {
     font-size: 16px;
 }
 
-/* Estilos para el botón de cerrar */
+/* close modal styles */
 .closeModal {
     background-color: #000000;
     color: #ffffff;
@@ -221,14 +220,14 @@ dialog {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Fondo del modal (backdrop) */
+/* backdrop */
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
     animation: backdropFadeIn 0.3s ease-out;
 }
 
-/* Animaciones */
+/* animations */
 @keyframes modalFadeIn {
     from {
         opacity: 0;
