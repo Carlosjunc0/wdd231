@@ -2,39 +2,21 @@
   "events": [
     {
       "name": "Oaxaca Music Expo",
-      "date": "2024-10-12",
+      "date": "2025-08-29",
       "image": "images/oax-party.webp",
-      "description": "A music expo celebrating local talent. DJ Alow presented a special tribal-house mix.."
+      "description": "A music expo celebrating local talent. DJ Alow presented a special tribal-house mix."
+    },
+    {
+      "name": "Future Sound Showcase",
+      "date": "2025-04-29",
+      "image": "images/street-party.webp",
+      "description": "A showcase introducing upcoming DJs. DJ Alow premiered 3 unreleased tracks."
     },
     {
       "name": "Night Pulse Club Party",
       "date": "2024-09-28",
       "image": "images/private-party.webp",
-      "description": "Private club event featuring local DJs, where DJ Alow delivered a progressive set that lit up the night."
-    },
-    {
-      "name": "ElectroWave Arena",
-      "date": "2024-08-30",
-      "image": "images/stadium-party.webp",
-      "description": "A massive arena event with over 5,000 attendees. DJ Alow performed a 1-hour live remix set."
-    },
-    {
-      "name": "Summer Beats Rooftop",
-      "date": "2024-08-10",
-      "image": "images/dj-alow-youth-festival.webp",
-      "description": "An intimate rooftop gathering filled with tropical house and chill EDM vibes."
-    },
-    {
-      "name": "Oaxaca Music Expo",
-      "date": "2024-07-20",
-      "image": "images/dj-alow-&-friends.webp",
-      "description": "A high-energy sunset electronic festival where DJ Alow opened the main stage with a deep house set"
-    },
-    {
-      "name": "Bass Storm Party",
-      "date": "2024-06-28",
-      "image": "images/hands-up.webp",
-      "description": "Underground bass event where DJ Alow collaborated with two other DJs for a dual-stage rotation set."
+      "description": "Private club event featuring local DJs, where DJ Alow delivered a hard-techno set that lit up the night."
     },
     {
       "name": "Neon Night Experience",
@@ -43,16 +25,34 @@
       "description": "High-energy neon party with lights, lasers, and DJ Alow headlining the night session."
     },
     {
+      "name": "ElectroWave Arena",
+      "date": "2024-02-20",
+      "image": "images/stadium-party.webp",
+      "description": "A massive arena event with over 5,000 attendees. DJ Alow performed a 1-hour live remix set."
+    },
+    {
+      "name": "Oaxaca Music Expo",
+      "date": "2024-07-20",
+      "image": "images/dj-alow-&-friends.webp",
+      "description": "A high-energy sunset electronic festival where DJ Alow opened the main stage with a Reguetón set"
+    },
+    {
+      "name": "Youth Festival",
+      "date": "2024-08-10",
+      "image": "images/dj-alow-youth-festival.webp",
+      "description": "A private event Dj Alow played 4 hours with Dj Junco"
+    },
+    {
+      "name": "Bass Storm Party",
+      "date": "2024-06-28",
+      "image": "images/hands-up.webp",
+      "description": "Underground bass event where DJ Alow collaborated with two other DJs for a dual-stage rotation set."
+    },
+    {
       "name": "Electric Garden Fest",
       "date": "2024-05-18",
       "image": "images/dj-alow-in-mexico.webp",
-      "description": "Outdoor event surrounded by nature, with a melodic techno performance from DJ Alow."
-    },
-    {
-      "name": "Future Sound Showcase",
-      "date": "2024-04-29",
-      "image": "images/street-party.webp",
-      "description": "A showcase introducing upcoming DJs. DJ Alow premiered 3 unreleased tracks."
+      "description": "Outdoor event surrounded by people, with a melodic techno performance from DJ Alow."
     },
     {
       "name": "Rave Under the Stars",

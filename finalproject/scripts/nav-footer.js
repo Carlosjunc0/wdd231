@@ -1,38 +1,48 @@
 // hamburger menu toggle
 document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerIcon = document.querySelector('.hamburger-icon');
-    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger-icon');
+    const nav = document.querySelector('.nav-menu');
     const body = document.body;
 
-    if (hamburgerIcon && navMenu) {
-        hamburgerIcon.addEventListener('click', function () {
-            navMenu.classList.toggle('active');
-            body.classList.toggle('mobile-menu-active');
+    if (hamburger) {
+        hamburger.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            nav.classList.toggle('active');
+            
 
-            // Change hamburger icon to X when active
-            if (navMenu.classList.contains('active')) {
-                hamburgerIcon.src = '../images/x-icon.svg';
+            if (nav.classList.contains('active')) {
+                hamburger.innerHTML = '✕'; 
+                hamburger.classList.add('close');
+                body.classList.add('menu-open');
             } else {
-                hamburgerIcon.src = 'images/hamburger-button-icon.svg';
+                hamburger.innerHTML = '☰';
+                hamburger.classList.remove('close');
+                body.classList.remove('menu-open');
             }
         });
 
-        // Close menu when clicking on a link
-        const navLinks = navMenu.querySelectorAll('a');
+        // close menu clicking a link
+        const navLinks = document.querySelectorAll('.nav-menu a');
         navLinks.forEach(link => {
-            link.addEventListener('click', function () {
-                navMenu.classList.remove('active');
-                body.classList.remove('mobile-menu-active');
-                hamburgerIcon.src = 'images/hamburger-button-icon.svg';
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                hamburger.innerHTML = '☰';
+                hamburger.classList.remove('close');
+                body.classList.remove('menu-open');
             });
         });
 
-        // Close menu when clicking outside
-        document.addEventListener('click', function (event) {
-            if (!event.target.closest('.nav-bar') && navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                body.classList.remove('mobile-menu-active');
-                hamburgerIcon.src = 'images/hamburger-button-icon.svg';
+        // close menu clicking out nav
+        document.addEventListener('click', function (e) {
+            if (nav.classList.contains('active') && 
+                !nav.contains(e.target) && 
+                !hamburger.contains(e.target)) {
+                nav.classList.remove('active');
+                hamburger.innerHTML = '☰';
+                hamburger.classList.remove('close');
+                body.classList.remove('menu-open');
             }
         });
     }

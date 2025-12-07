@@ -1,15 +1,148 @@
+/* small.css - Solo responsive para pantallas pequeñas */
+
+/* ========== MEDIA QUERIES PARA PANTALLAS PEQUEÑAS (≤768px) ========== */
+
+/* ----------- General Styles ----------- */
 @media screen and (max-width: 768px) {
 
+
+    header {
+        position: static !important;
+        background: #0b0d0f;
+        width: 100%;
+    }
+
+    .header-container {
+        padding: 0.5rem 1rem;
+        position: relative;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
     .hamburger-icon {
-        background-color: white;
-        width: 30px;
-        display: flex;
-        cursor: pointer;
+        display: block !important;
+        order: 2;
+        color: #FFFFFF !important;
+        background: none !important;
+        border: none !important;
+        font-size: 28px !important;
+        cursor: pointer !important;
+        padding: 8px !important;
+        margin: 0 !important;
+        line-height: 1 !important;
+        z-index: 1001 !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 4px !important;
+
     }
 
-    .nav-menu a {
-        display: none;
+    header nav {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0b0d0f;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        border-top: 1px solid #333;
+        flex-direction: column;
+        gap: 0;
     }
 
+    .nav-menu.active {
+        display: flex !important;
+        align-items: center;
+    }
 
+    header .nav-menu a {
+        color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+        padding: 0.7rem;
+        border-top: 1px solid #353535;
+    }
+}
+
+/* ----------- Index page styles ----------- */
+
+.about-me-section {
+    grid-template-areas:
+        "title"
+        "image"
+        "description";
+    background: var(--black-color);
+    color: var(--white-color);
+}
+
+/* Events slider */
+.events-slider img {
+    height: 300px;
+}
+
+.slider-btn {
+    font-size: 1.8rem;
+    padding: 0.3rem 0.6rem;
+}
+
+/* FAQ section */
+.faq-container {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.faq-question {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+/* ----------- Contact page styles ----------- */
+
+.form-section h1 {
+    font-size: 1.8rem;
+}
+
+#joinForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#joinForm label {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+#joinForm input,
+#joinForm select,
+#joinForm textarea {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+}
+
+.submit-btn {
+    padding: 0.9rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+
+/* ----------- Thanks page styles ----------- */
+.thanks {
+    width: 95%;
+}
+
+.thanks h2 {
+    font-size: 1.8rem;
+}
+
+.thanks p {
+    font-size: 1rem;
+}
+
+.data-box {
+    font-size: 0.95rem;
 }

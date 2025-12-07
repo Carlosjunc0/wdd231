@@ -45,7 +45,9 @@
                     </a>
                 </div>
 
-                <img src="../images/hamburger-button-icon.svg" alt="Menu Icon" class="hamburger-icon">
+                <button class="hamburger-icon" id="hamburger-icon" aria-label="Menu">
+                    ☰
+                </button>
 
                 <nav class="nav-menu" id="nav-menu">
                     <a href="index.html">Home</a>
@@ -82,6 +84,41 @@
                         rhythm, and every song. I have participated in several events, and my biggest dream is to play
                         my
                         own songs at Tomorrowland.</p>
+
+                    <!-- Modal Section -->
+                    <button class="openModal" id="openModal" data-target="Modal">Read my full bio</button>
+
+                    <dialog id="Modal">
+                        <div class="modal-content">
+                            <strong>Who Dj Alow is?</strong>
+                            <p>I was born in Oaxaca on April 10, 2001, in a house where music always seemed to find a
+                                way to slip into the days. When I was 13, my father took me by the hand and taught me
+                                how to use a turntable. I remember the feel of the records, the vibration of the bass
+                                traveling through the room, and that electric feeling of discovering that, with my
+                                hands, I could stir emotions. That's where it all began: reggaeton lit the spark,
+                                electronic music opened my horizons, pop taught me melodies, alternative rock gave me
+                                identity, and hard techno fueled my audacity.
+                                In 2016, I created my first song. I didn't release it right away; it was like a secret
+                                that still needed to mature. But I took it with me to different events and, to my
+                                surprise, people began to resonate with it. There was something about that sound, a
+                                mixture of my roots and my dreams, that connected. That small triumph ignited a bigger
+                                flame: I understood that I couldn't stay in my comfort zone.
+                                So I decided to move forward. I created more songs, each one like a piece of my story. I
+                                created my website, a space where I could exist as I was, without masks. I started
+                                traveling to different places, sharing my music and my essence. And along the way, I
+                                also discovered different versions of myself: first Dj Junco, then Dj Junidrops,
+                                identities that helped me explore who I could become. Each name taught me something,
+                                pushed me forward, opened doors for me.
+                                Finally, between beats, mistakes, successes, and lessons learned, the name that I truly
+                                felt was mine was born: DJ Alow. It not only represented my sound, but also the
+                                evolution of a child who one day spun a record out of curiosity and ended up finding a
+                                passion that would change everything.
+                                Today, I continue to create, dreaming with my feet on the ground but my eyes on the sky,
+                                always remembering that each mix is one more step toward the best version of myself.</p>
+                            <button class="closeModal" id="closeModal">Close</button>
+                        </div>
+                    </dialog>
+
                 </div>
             </div>
 
@@ -138,6 +175,9 @@
                 <!-- COPYRIGHT -->
                 <div class="copyright">
                     <p>&copy; <span id="currentYear"></span> Dj Alow. All rights reserved.</p>
+                    <nav class="nav-menu"><a
+                            href="https://www.youtube.com/watch?v=9NixMYOdiOE&list=RDMMew49US5m_T8&index=2"
+                            target="_blank">Video for BYU Pathway</a></nav>
                     <p class="author">Carlos Junco | Last Modified: <span id="lastModified"></span></p>
                 </div>
 

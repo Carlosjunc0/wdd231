@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/design.css">
 
     <script src="scripts/nav-footer.js" defer></script>
+    <script src="scripts/timeStamp.js" defer></script>
 
     <link rel="icon" href="images/logo-icon.webp">
 
@@ -42,7 +43,9 @@
                     </a>
                 </div>
 
-                <img src="../images/hamburger-button-icon.svg" alt="Menu Icon" class="hamburger-icon">
+                <button class="hamburger-icon" id="hamburger-icon" aria-label="Menu">
+                    ☰
+                </button>
 
                 <nav class="nav-menu" id="nav-menu">
                     <a href="index.html">Home</a>
@@ -56,44 +59,47 @@
     <main>
         <div class="page-wrapper">
 
-            <section class="form">
+            <div class="form-container">
+                <!-- Form -->
+                <section class="form-section">
+                    <h1>Send a Message</h1>
 
-                <div class="flex">
-                    <!-- FORM -->
-                    <section class="form-section">
-                        <h1>Send a Message</h1>
-
-                        <form method="get" action="thankyou.html" id="joinForm">
-
-                            <label for="first">
+                    <form method="get" action="thankyou.html" id="joinForm">
+                        <div class="form-group">
+                            <label for="first" class="required">
                                 First Name
                             </label>
                             <input type="text" id="first" name="first" required autocomplete="given-name"
                                 title="Enter your first name">
+                        </div>
 
-
-                            <label for="last">
+                        <div class="form-group">
+                            <label for="last" class="required">
                                 Last Name
                             </label>
                             <input type="text" id="last" name="last" required autocomplete="family-name"
                                 title="Enter your last name">
+                        </div>
 
-
-                            <label for="email">
+                        <div class="form-group">
+                            <label for="email" class="required">
                                 Email
                             </label>
                             <input type="email" id="email" name="email" required autocomplete="email"
                                 placeholder="example@email.com" title="Enter a valid email address">
+                        </div>
 
-
-                            <label for="phone">
+                        <div class="form-group">
+                            <label for="phone" class="required">
                                 Mobile Phone
                             </label>
                             <input type="tel" id="phone" name="phone" required autocomplete="tel"
                                 title="Enter your mobile number">
+                        </div>
 
-                            <label for="purpose">
-                                Porpuse
+                        <div class="form-group full-width">
+                            <label for="purpose" class="required">
+                                Purpose
                             </label>
                             <select id="purpose" name="purpose" required title="Select your reason">
                                 <option value="">Choose one...</option>
@@ -102,18 +108,22 @@
                                 <option value="Collaborations">Collaborations</option>
                                 <option value="Suggestions">Suggestions</option>
                             </select>
-                            <label for="description">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="description" class="required">
                                 Description
                             </label>
-                            <textarea id="description" name="description" required autocomplete="given-name"
-                                title="Describe your case"></textarea>
+                            <textarea id="description" name="description" required title="Describe your case"
+                                placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
 
-                            <input type="submit" value="Publish" class="submit-btn">
+                        <input type="hidden" name="timestamp" id="timestamp">
 
-                        </form>
-                    </section>
-                </div>
-            </section>
+                        <input type="submit" value="Publish" class="submit-btn">
+                    </form>
+                </section>
+            </div>
     </main>
 
     <footer>
@@ -124,6 +134,9 @@
                 <!-- COPYRIGHT -->
                 <div class="copyright">
                     <p>&copy; <span id="currentYear"></span> Dj Alow. All rights reserved.</p>
+                    <nav class="nav-footer"><a
+                            href="https://www.youtube.com/watch?v=9NixMYOdiOE&list=RDMMew49US5m_T8&index=2"
+                            target="_blank">Video for BYU Pathway</a></nav>
                     <p class="author">Carlos Junco | Last Modified: <span id="lastModified"></span></p>
                 </div>
 
